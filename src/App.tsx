@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Header, Movies, Search } from "./components";
+import { Details, Header, Movies, Search } from "./components";
 import { movie, MoviesProps } from "./components/movies/Movies";
 
 const API_KEY = "db530aea";
@@ -46,7 +46,7 @@ function App() {
       <div>MOVIE CONNECTION</div>
       <Header />
       <Search />
-
+      <Details />
       {isLoading ? (
         <Loading />
       ) : (
