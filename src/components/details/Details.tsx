@@ -1,24 +1,16 @@
-import { useEffect } from "react";
-import $ from "jquery";
 import "./DetailsStyles.scss";
 import { useDetails } from "./useDetials";
+
 /**
  * DETAILS
  * @description Details Component
- *
+ * @return JSX.Element
  */
-
-const Details = () => {
+const Details = (): JSX.Element => {
   useDetails();
   const OpenButton = () => (
     <button type="button" className="open">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path
           d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
           fill="currentColor"
@@ -35,7 +27,6 @@ const Details = () => {
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
         role="button"
         aria-label="close"
         tabIndex={0}
@@ -51,13 +42,7 @@ const Details = () => {
   );
   const PlayButton = () => (
     <button type="button" className="play">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path
           d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
           fill="currentColor"
@@ -69,13 +54,7 @@ const Details = () => {
 
   const AddButton = () => (
     <button type="button" className="add">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -107,13 +86,7 @@ const Details = () => {
 
   const VolumeButton = () => (
     <button type="button" className="volume">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -199,21 +172,29 @@ const Details = () => {
     </svg>
   );
 
+  const Video = () => (
+    <video
+      autoPlay
+      loop
+      poster="https://www.themoviedb.org/t/p/original/fOy6SL5Zs2PFcNXwqEPIDPrLB1q.jpg"
+    >
+      <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/10/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm.2160p.vp9.webm" />
+    </video>
+  );
+
+  const HeaderContent = ({ children }: any) => (
+    <div className="header-content">
+      <div className="header-title">{children}</div>
+    </div>
+  );
+
   return (
     <div id="wrapper">
       <OpenButton />
       <div className="modal">
         <div className="modal-header">
-          <video
-            autoPlay
-            loop
-            poster="https://www.themoviedb.org/t/p/original/fOy6SL5Zs2PFcNXwqEPIDPrLB1q.jpg"
-          >
-            <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/10/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm.2160p.vp9.webm" />
-          </video>
-
+          <Video />
           <CloseButton />
-
           <div className="header-content">
             <div className="header-title">
               <img

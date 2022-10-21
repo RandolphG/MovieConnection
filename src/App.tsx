@@ -10,7 +10,7 @@ const MOVIE_API_URL = `https://www.omdbapi.com/?s=man&apikey=${API_KEY}`;
  * @description A Movie application
  * @constructor
  */
-function App() {
+function App(): JSX.Element {
   const [movies, setMovies] = useState<movie[]>([]);
   const [isLoading, setLoading] = useState<boolean>(true);
 
