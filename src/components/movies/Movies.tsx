@@ -15,23 +15,31 @@ export type movie = {
  * @return void
  * @param movies
  */
-export const Movies = (props: MoviesProps): JSX.Element => {
+const Movies = (props: MoviesProps): JSX.Element => {
   const { movies } = props;
 
-  console.log("MOVIE_DATA", movies);
   return (
     <>
       {movies &&
         movies.map((movie: movie, index: number) => {
           return (
-            <div key={`movie-${index}`}>
+            <div
+              key={`movie-${index}`}
+              style={{
+                width: "200px",
+                display: "flex",
+                flexDirection: "column",
+                border: "2px solid black",
+              }}
+            >
               <div>{movie.Title}</div>
               <img alt={movie.Title} src={movie.Poster} />
               <div>{movie.Type}</div>
-              <div>{movie.imdbID}</div>
             </div>
           );
         })}
     </>
   );
 };
+
+export default Movies;
