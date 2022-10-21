@@ -1,6 +1,6 @@
 # *Movie  Application*
 *Simple movie database application*
-
+![PREVIEW](./_preview.gif)
 
 
 ### *Installation process* :
