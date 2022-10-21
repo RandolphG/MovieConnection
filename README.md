@@ -1,10 +1,7 @@
 # *Movie  Application*
-*Twitter like button with animations*
-![HEART](./_preview.gif)
+*Simple movie database application*
 
 
-### *Technologies* :
-- [*SCSS*](https://sass-lang.com/)
 
 ### *Installation process* :
 - clone repo
@@ -13,7 +10,7 @@
 - run with yarn start or npm
 
 ```bash
-$ git clone https://github.com/RandolphG/Twitter-Heart
+$ git clone https://github.com/RandolphG/MovieConntection.git
 $ cd project folder
 $ yarn or npm i
 $ yarn start or npm start
