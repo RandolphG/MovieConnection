@@ -1,19 +1,10 @@
-export interface MoviesProps {
-  movies?: movie[];
-}
-
-export type movie = {
-  Poster: string;
-  Title: string;
-  Type: string;
-  imdbID: string;
-};
+import { MoviesProps, movie } from "./types";
 
 /**
  * MOVIES
  * @description Rendering movie results from fetched data.
  * @return void
- * @param movies
+ * @param props
  */
 const Movies = (props: MoviesProps): JSX.Element => {
   const { movies } = props;

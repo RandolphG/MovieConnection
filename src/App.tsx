@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Details, Header, Movies, Search } from "./components";
-import { movie, MoviesProps } from "./components/movies/Movies";
+import { Header, Movies, Search, MoviesProps } from "./components/";
+import { Details } from "./components";
 
 const API_KEY = "db530aea";
 const MOVIE_API_URL = `https://www.omdbapi.com/?s=man&apikey=${API_KEY}`;
@@ -11,7 +11,8 @@ const MOVIE_API_URL = `https://www.omdbapi.com/?s=man&apikey=${API_KEY}`;
  * @constructor
  */
 function App(): JSX.Element {
-  const [movies, setMovies] = useState<movie[]>([]);
+  // @ts-ignore
+  const [movies, setMovies] = useState<MoviesProps>([]);
   const [isLoading, setLoading] = useState<boolean>(true);
 
   /* fetching movies from the api*/
@@ -43,24 +44,12 @@ function App(): JSX.Element {
 
   return (
     <div>
-      <div>MOVIE CONNECTION</div>
+      <div>MOVIES</div>
       <Header />
-      <Search />
       <Details />
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <div
-          style={{
-            width: "100vw",
-            display: "flex",
-            flexDirection: "row",
-            border: "2px solid black",
-          }}
-        >
-          <Movies movies={movies} />
-        </div>
-      )}
+      {/*@ts-ignore*/}
+      {isLoading ? <Loading /> : <Movies movies={movies} />}
+      <Search />
     </div>
   );
 }

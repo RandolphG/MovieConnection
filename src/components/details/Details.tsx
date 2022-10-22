@@ -1,5 +1,6 @@
 import "./DetailsStyles.scss";
 import { useDetails } from "./useDetials";
+import { ButtonOpen } from "./common/_index";
 
 /**
  * DETAILS
@@ -8,17 +9,6 @@ import { useDetails } from "./useDetials";
  */
 const Details = (): JSX.Element => {
   useDetails();
-  const OpenButton = () => (
-    <button type="button" className="open">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path
-          d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
-          fill="currentColor"
-        />
-      </svg>
-      Click Here
-    </button>
-  );
 
   const CloseButton = () => (
     <button type="button" className="close">
@@ -188,20 +178,28 @@ const Details = (): JSX.Element => {
     </div>
   );
 
+  const Description = () => (
+    <p>
+      The film&apos;s premise is about a group of warriors and scientists, who
+      gathered at the “Oude Kerk” in Amsterdam to stage a crucial event from the
+      past, in a desperate attempt to rescue the world from destructive robots.
+    </p>
+  );
+
+  const Image = () => (
+    <img src="https://i.ibb.co/VMvmMgP/xconvert-com.png" alt="Tears Of Steel" />
+  );
+
   return (
     <div id="wrapper">
-      <OpenButton />
+      <ButtonOpen />
       <div className="modal">
         <div className="modal-header">
           <Video />
           <CloseButton />
           <div className="header-content">
             <div className="header-title">
-              <img
-                src="https://i.ibb.co/VMvmMgP/xconvert-com.png"
-                alt="Tears Of Steel"
-              />
-
+              <Image />
               <div className="header-buttons">
                 <PlayButton />
                 <AddButton />
@@ -223,14 +221,8 @@ const Details = (): JSX.Element => {
               <HDIcon />
               <ADIcon />
             </div>
-            <p>
-              The film&apos;s premise is about a group of warriors and
-              scientists, who gathered at the “Oude Kerk” in Amsterdam to stage
-              a crucial event from the past, in a desperate attempt to rescue
-              the world from destructive robots.
-            </p>
+            <Description />
           </div>
-
           <div className="modal-content-second">
             <Cast />
             <Genres />
