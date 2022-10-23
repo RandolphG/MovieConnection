@@ -16,6 +16,9 @@ function MovieTemplate(props: MovieTemplateProps) {
         movies.map((movie, idx) => (
           <figure key={idx}>
             <img
+              onClick={(e) => {
+                console.log("CLICK", movie);
+              }}
               src={`${MOVIE_DB_IMAGE_BASE_URL}${imageSize}${movie.backdrop_path}`}
               alt="backdrop"
             />

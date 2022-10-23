@@ -32,7 +32,7 @@ export const useDetails = () => {
     );
     /* I don't gain anything by making this available for free, if possible help! */
     playButton.addEventListener("click", () =>
-      window.open("https://www.buymeacoffee.com/pingo")
+      window.open("https://github.com/RandolphG")
     );
 
     const volume0 =

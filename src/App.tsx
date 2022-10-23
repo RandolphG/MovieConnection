@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Dashboard } from "./components/";
 import { DiscoverProps, IDiscoverResults } from "./utils";
+import { MOVIE_DB_DISCOVER_URL } from "./config";
+import { Details } from "./components";
 
 /**
  * APPLICATION
@@ -25,7 +27,7 @@ function App(): JSX.Element {
   const getMoviesFromDB = async (): Promise<void> => {
     console.log("getting data. ");
     const moviesFromDB: IDiscoverResults = await fetch(
-      `${process.env.REACT_APP_MOVIE_DB_DISCOVER_URL}`
+      `${MOVIE_DB_DISCOVER_URL}`
     )
       .then((response) => {
         return response.json();
@@ -48,7 +50,7 @@ function App(): JSX.Element {
 
   return (
     <div>
-      {/*<Details />*/}
+      <Details />
       {/*@ts-ignore*/}
       {isLoading ? <Loading /> : <Dashboard results={movies} />}
     </div>
