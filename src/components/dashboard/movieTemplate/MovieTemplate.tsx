@@ -1,29 +1,29 @@
 import React from "react";
-interface MovieTemplatProps {
-  movies: movie[];
+import { MOVIE_DB_IMAGE_BASE_URL } from "../../../config";
+import { Discover } from "../../../utils";
+
+interface MovieTemplateProps {
+  movies: Discover[];
 }
 
-type movie = {
-  title: string;
-  genre: string[];
-  rating: number;
-  poster: string;
-};
-
-function Movietemplate(props: MovieTemplatProps) {
+function MovieTemplate(props: MovieTemplateProps) {
   const { movies } = props;
+  const imageSize: string = "w500";
 
   return (
     <>
       {movies &&
         movies.map((movie, idx) => (
           <figure key={idx}>
-            <img src={movie.poster} alt="poster" />
+            <img
+              src={`${MOVIE_DB_IMAGE_BASE_URL}${imageSize}${movie.backdrop_path}`}
+              alt="backdrop"
+            />
             <figcaption>
-              <p>{movie && movie.genre.join(" ")}</p>
+              {/*<p>{movie && movie.genre.join(" ")}</p>*/}
               <div className="rating">
                 <i className="fa fa-heart" />
-                <h4>{movie.rating}</h4>
+                <h4>{movie.vote_average}</h4>
               </div>
             </figcaption>
           </figure>
@@ -31,4 +31,4 @@ function Movietemplate(props: MovieTemplatProps) {
     </>
   );
 }
-export default Movietemplate;
+export default MovieTemplate;
