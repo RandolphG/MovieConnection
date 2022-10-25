@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Discover, DiscoverProps } from "../../utils";
+import "./DashbaordStyles.scss";
 
 export const useDashboard = (props: DiscoverProps) => {
   const { results } = props;
@@ -18,15 +19,36 @@ export const useDashboard = (props: DiscoverProps) => {
   function strip(title: string) {
     return title.replace(/^(a|an|the)\s/i, "");
   }
+
+  /**
+   * handleSortLowRating
+   * @param a
+   * @param b
+   */
   const handleSortLowRating = (a: Discover, b: Discover) =>
     a.vote_average > b.vote_average ? 1 : -1;
 
+  /**
+   * handleSortHighRating
+   * @param a
+   * @param b
+   */
   const handleSortHighRating = (a: Discover, b: Discover) =>
     b.vote_average > a.vote_average ? 1 : -1;
 
+  /**
+   * handleSortAlphabetically
+   * @param a
+   * @param b
+   */
   const handleSortAlphabetically = (a: Discover, b: Discover) =>
     strip(a.title) > strip(b.title) ? 1 : -1;
 
+  /**
+   * handleSortReverse
+   * @param a
+   * @param b
+   */
   const handleSortReverse = (a: Discover, b: Discover) =>
     strip(b.title) > strip(a.title) ? 1 : -1;
 

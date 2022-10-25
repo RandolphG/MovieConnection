@@ -1,5 +1,5 @@
 import React from "react";
-import { MOVIE_DB_IMAGE_BASE_URL } from "../../../config";
+import { MOVIE_DB_IMAGE_BASE_URL } from "../../../utils/config";
 import { Discover } from "../../../utils";
 
 interface MovieTemplateProps {

@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
 import { DiscoverProps, IDiscoverResults } from "./utils";
-import { MOVIE_DB_DISCOVER_URL } from "./config";
+import { MOVIE_DB_DISCOVER_URL } from "./utils/config";
 
 export const useApp = () => {
-  // @ts-ignore
-  const [movies, setMovies] = useState<DiscoverProps>([]);
+  const [movies, setMovies] = useState<DiscoverProps | []>([]);
   const [isLoading, setLoading] = useState<boolean>(true);
 
-  /* fetching movies from the api*/
   useEffect(() => {
     getMoviesFromDB().then((_result) => console.log("done. "));
   }, []);
 
   /**
    * getMoviesFromDB
-   * @description Call api
+   * @description Call api and fetch moves from db
    * @return Promise<void>
    */
   const getMoviesFromDB = async (): Promise<void> => {
