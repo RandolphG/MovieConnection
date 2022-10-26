@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/0/b" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/5/a" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/8/3" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/8/5" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/8/c" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/f/5" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/f/d" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/4" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/9" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
