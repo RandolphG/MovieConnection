@@ -14,7 +14,7 @@ function App(): JSX.Element {
 
   return (
     <div>
-      <Details />
+      {/*<Details />*/}
       {/*@ts-ignore*/}
       {isLoading ? <Loading /> : <Dashboard results={movies} />}
     </div>

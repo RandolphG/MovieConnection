@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85c12b1d-6c0b-402e-ac17-cb0da2195479" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/404/NotFound.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/404/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/registration/Registration.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/registration/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/helper/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/helper/privateRoute.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/helper/publicRoute.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/movieConnection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movieConnection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0e2d3e1d32a5dcf92e3cf32fd17174ac3e7e5564" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b9c28667edaca21999893ccb9aa59554bb183e6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84c10040eccf90fd859bf746045190490cccafc8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa9269c2a038c5c3312c0bf0eac1a1079f80433f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0719ccf776ba22fa009a57bf9d9f0ef0e2f297a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,8 @@
       <updated>1666688953555</updated>
       <workItem from="1666688954752" duration="2341000" />
       <workItem from="1666696240370" duration="685000" />
-      <workItem from="1666697020347" duration="3790000" />
+      <workItem from="1666697020347" duration="8387000" />
+      <workItem from="1666718001109" duration="3402000" />
     </task>
     <servers />
   </component>
