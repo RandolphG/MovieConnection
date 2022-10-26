@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85c12b1d-6c0b-402e-ac17-cb0da2195479" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/movieConnection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movieConnection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -55,7 +52,7 @@
       <workItem from="1666696240370" duration="685000" />
       <workItem from="1666697020347" duration="8387000" />
       <workItem from="1666718001109" duration="3402000" />
-      <workItem from="1666786501889" duration="2194000" />
+      <workItem from="1666786501889" duration="5312000" />
     </task>
     <servers />
   </component>
