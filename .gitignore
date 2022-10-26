@@ -27,7 +27,6 @@ desktop.ini
 yarn.lock
 .idea
 .idea/*
-.idea/movieConnection.iml
 *.iml
 *.pb
 .idea/workspace.xml
